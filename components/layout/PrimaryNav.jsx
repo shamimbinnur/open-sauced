@@ -6,8 +6,8 @@ function PrimaryNav() {
     return (
         <nav className="flex bg-offWhite min-h-10 w-full font-roboto font-bold px-4 py-4 sm:py-2  ">
             {/* Branding */}
-            <div className=" flex-1 flex gap-4 text-2xl font-medium items-center ">
-                <i className="fas fa-cannabis text-darkGrey "></i>
+            <div className=" flex-1 flex text-2xl font-medium items-center ">
+                <i className="fas fa-cannabis text-darkGrey mr-4 "></i>
                 <h1 className=" text-cheesyYellow " >Open  <span className="text-darkGrey">Sauced</span> </h1>
                 
             </div>
