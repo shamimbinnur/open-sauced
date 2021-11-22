@@ -16,11 +16,23 @@ module.exports = {
           'grey': '#313d3e',
           'darkGrey': '#171c1d',
           'darkestGrey': '#2C3137',
-          'fav-purple': '#5267DF',
+          'accent': '#FAEACE',
         },
         fontFamily: {
-          Poppins : ["Poppins, sans-serif"]
-        }
+          Poppins : ["Poppins"],
+          Righteous: ["Righteous"],
+          Roboto: ["Roboto"],
+          Ubuntu: ["Ubuntu", "sans-serif"],
+        },
+        container:{
+          center: true,
+          padding: "1rem",
+          screens: {
+            lg: "1124px",
+            xl: "1124px",
+            "2xl": "1124px",
+          },
+        },
     },
   },
   variants: {
