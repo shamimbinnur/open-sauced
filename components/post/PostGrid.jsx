@@ -43,8 +43,8 @@ function PostGrid({data}) {
                         className="object-cover"
                         src={cover2}
                         alt="Avatar 02"
-                        width={500}
-                        height={500}
+                        width={1000}
+                        height={1000}
                 />
             </div>
             {/* Action Button Container */}
