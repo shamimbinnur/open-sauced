@@ -1,5 +1,5 @@
 import React from 'react'
-import { useGridContext } from '../../contexts/gridContext'
+import { useGridContext } from '../contexts/gridContext'
 import PostGrid from '../post/PostGrid'
 import PostList from '../post/PostList'
 import { postData } from "./postData"

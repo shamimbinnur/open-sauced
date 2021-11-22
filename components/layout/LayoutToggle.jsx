@@ -1,5 +1,6 @@
 import React from 'react'
-import { useGridContext } from '../../contexts/gridContext'
+import { useGridContext } from '../contexts/gridContext';
+
 
 function LayoutToggle() {
 
