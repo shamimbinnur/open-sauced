@@ -9,8 +9,8 @@ function PostGrid({data}) {
     return (
         <div className=" bg-offWhite rounded-xl p-6 font-roboto  ">
             {/* Avator Container */}
-            <div className=" w-full flex gap-x-3 mb-3 ">
-                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
+            <div className=" w-full flex  mb-3 ">
+                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full mr-3 ">
                     <Image
                         className="object-cover"
                         src={av1}
@@ -19,7 +19,7 @@ function PostGrid({data}) {
                         height={500}
                     />
                 </div>
-                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
+                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full mr-3 ">
                     <Image
                         className="object-cover"
                         src={av2}
@@ -50,21 +50,21 @@ function PostGrid({data}) {
             {/* Action Button Container */}
             <div className=" flex justify-between w-full ">
                 {/* Upvote */}
-                <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
-                    <i className="fas fa-arrow-alt-circle-up"></i>
+                <div className=" flex justify-center items-center text-xltext-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
+                    <i className="fas fa-arrow-alt-circle-up mr-2 "></i>
                     <p className="font-bold">5</p>
                 </div>
 
                 {/* Comment */}
-                <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
-                    <i className="fas fa-comment-dots"></i>
+                <div className=" flex justify-center items-center text-xl text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
+                    <i className="fas fa-comment-dots mr-2 "></i>
                     
                     <p className="font-bold" >55</p>
                 </div>
 
                 {/* Bookmark */}
-                <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200 ">
-                    <i className="fas fa-bookmark"></i>
+                <div className=" flex justify-center items-center text-xltext-grey hover:text-saucyRed cursor-pointer transition-all duration-200 ">
+                    <i className="fas fa-bookmark mr-2 "></i>
                     <p className="font-bold" >14</p>
                 </div>
             </div>

@@ -11,9 +11,9 @@ function PostList({data}) {
             {/* Flex container */}
             <div className="flex ">
                 {/* Avatar Container */}
-                <div className=" flex flex-col gap-2">
+                <div className=" flex flex-col ">
                     {/* Avatar */}
-                    <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
+                    <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full mb-2 ">
                         <Image
                             className="object-cover"
                             src={av1}
@@ -46,21 +46,21 @@ function PostList({data}) {
                     {/* Action Button Container */}
                     <div className=" flex justify-between w-full ">
                         {/* Upvote */}
-                        <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
-                            <i className="fas fa-arrow-alt-circle-up"></i>
+                        <div className=" flex justify-center items-center text-xl text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
+                            <i className="fas fa-arrow-alt-circle-up mr-2 "></i>
                             <p className="font-bold">5</p>
                         </div>
 
                         {/* Comment */}
-                        <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
-                            <i className="fas fa-comment-dots"></i>
+                        <div className=" flex justify-center items-center text-xl  text-grey hover:text-saucyRed cursor-pointer transition-all duration-200  ">
+                            <i className="fas fa-comment-dots mr-2 "></i>
                             
                             <p className="font-bold" >55</p>
                         </div>
 
                         {/* Bookmark */}
-                        <div className=" flex justify-center items-center text-xl gap-2 text-grey hover:text-saucyRed cursor-pointer transition-all duration-200 ">
-                            <i className="fas fa-bookmark"></i>
+                        <div className=" flex justify-center items-center text-xl  text-grey hover:text-saucyRed cursor-pointer transition-all duration-200 ">
+                            <i className="fas fa-bookmark mr-2 "></i>
                             <p className="font-bold" >14</p>
                         </div>
                     </div>
