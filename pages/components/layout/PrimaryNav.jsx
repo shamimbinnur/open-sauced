@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import av1 from "../posts/placeholderImages/av01.jpg"
 
 function PrimaryNav() {
     return (
@@ -9,11 +11,20 @@ function PrimaryNav() {
                 
             </div>
             <div className=" items-center ">
+                {/* If not logged in */}
                 {/* <div className="text-md font-medium bg-saucyRed text-gray-100 py-1 px-3 rounded-xl hover:bg-grey hover:text-lighterGrey">
                     Login
                 </div> */}
-                <div className=" rounded-full w-10 h-10 bg-blue-400 ">
 
+                {/* If logged in */}
+                <div className=" rounded-full w-10 h-10 overflow-hidden ring-2 ring-saucyRed ">
+                <Image
+                    className="object-cover"
+                    src={av1}
+                    alt="Avatar 02"
+                    width={500}
+                    height={500}
+                />
                 </div>
             </div>
             

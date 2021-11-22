@@ -1,24 +1,51 @@
 import React from 'react'
+import Image from 'next/image'
+import av1 from "../posts/placeholderImages/av01.jpg"
+import av2 from "../posts/placeholderImages/av02.jpg"
+import cover1 from "../posts/placeholderImages/cover1.jpg"
+import cover2 from "../posts/placeholderImages/cover2.jpg"
 
-function Post() {
+function Post({data}) {
     return (
         <div className=" bg-offWhite rounded-xl p-6 font-roboto  ">
             {/* Avator Container */}
             <div className=" w-full flex gap-x-3 mb-3 ">
-                <div className="bg-blue-400 w-10 h-10  rounded-full "></div>
-                <div className="bg-blue-400 w-10 h-10  rounded-full "></div>
+                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
+                <Image
+                    className="object-cover"
+                    src={av1}
+                    alt="Avatar 01"
+                    width={500}
+                    height={500}
+                />
+                </div>
+                <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
+                <Image
+                    className="object-cover"
+                    src={av2}
+                    alt="Avatar 02"
+                    width={500}
+                    height={500}
+                />
+                </div>
             </div>
             {/* Title */}
-            <div className=" text-grey text-md font-medium mb-6 ">
-                <h1> 8 Signs of a having migrane issies </h1>
+            <div className=" text-grey text-md font-medium mb-6 h-14 overflow-hidden ">
+                <h1>{data.repo_name} </h1>
             </div>
             {/* Date and Time */}
             <div className=" text-lightGrey text-sm mb-2 ">
                 <h3> Yesterday - 5 m read time </h3>
             </div>
             {/* Cover photo */}
-            <div className="w-full bg-blue-400 h-28 rounded-md mb-2 ">
-
+            <div className="w-full bg-blue-400 h-28 overflow-hidden rounded-md mb-2 ">
+            <Image
+                    className="object-cover"
+                    src={cover2}
+                    alt="Avatar 02"
+                    width={500}
+                    height={500}
+                />
             </div>
             {/* Action Button Container */}
             <div className=" flex justify-between w-full ">
