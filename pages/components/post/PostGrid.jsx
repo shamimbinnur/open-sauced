@@ -5,28 +5,28 @@ import av2 from "../posts/placeholderImages/av02.jpg"
 import cover1 from "../posts/placeholderImages/cover1.jpg"
 import cover2 from "../posts/placeholderImages/cover2.jpg"
 
-function Post({data}) {
+function PostGrid({data}) {
     return (
         <div className=" bg-offWhite rounded-xl p-6 font-roboto  ">
             {/* Avator Container */}
             <div className=" w-full flex gap-x-3 mb-3 ">
                 <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
-                <Image
-                    className="object-cover"
-                    src={av1}
-                    alt="Avatar 01"
-                    width={500}
-                    height={500}
-                />
+                    <Image
+                        className="object-cover"
+                        src={av1}
+                        alt="Avatar 01"
+                        width={500}
+                        height={500}
+                    />
                 </div>
                 <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full ">
-                <Image
-                    className="object-cover"
-                    src={av2}
-                    alt="Avatar 02"
-                    width={500}
-                    height={500}
-                />
+                    <Image
+                        className="object-cover"
+                        src={av2}
+                        alt="Avatar 02"
+                        width={500}
+                        height={500}
+                    />
                 </div>
             </div>
             {/* Title */}
@@ -39,12 +39,12 @@ function Post({data}) {
             </div>
             {/* Cover photo */}
             <div className="w-full bg-blue-400 h-28 overflow-hidden rounded-md mb-2 ">
-            <Image
-                    className="object-cover"
-                    src={cover2}
-                    alt="Avatar 02"
-                    width={500}
-                    height={500}
+                <Image
+                        className="object-cover"
+                        src={cover2}
+                        alt="Avatar 02"
+                        width={500}
+                        height={500}
                 />
             </div>
             {/* Action Button Container */}
@@ -72,4 +72,4 @@ function Post({data}) {
     )
 }
 
-export default Post
+export default PostGrid
