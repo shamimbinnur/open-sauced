@@ -7,6 +7,11 @@ function Modal() {
 
 
     return (
+        <>
+        <div onClick={()=> setIsOpen(false)  } className={" z-20 bg-gray-800 opacity-80 w-full h-full top-0 left-0 absolute  " + show} >
+        </div>
+
+        
         <div className=" flex justify-center ">
             <div className=" absolute top-14 flex justify-center flex-col items-center sm:top-10">
                 
@@ -56,18 +61,13 @@ function Modal() {
                                 <h1 className="text-sm" > Bronze Level</h1>
                                 <h3 className="text-sm text-lightGrey">Read at least one article on different days</h3>
                             </div>
-                        </div>
-
-                        
-
-                        
+                        </div> 
                     </div>
                 </div>
-
-                
-
             </div>
         </div>
+        </>
+        
     )
 }
 

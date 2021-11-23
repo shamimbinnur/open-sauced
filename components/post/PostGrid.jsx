@@ -2,12 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import av1 from "../posts/placeholderImages/av01.jpg"
 import av2 from "../posts/placeholderImages/av02.jpg"
-import cover1 from "../posts/placeholderImages/cover1.jpg"
 import cover2 from "../posts/placeholderImages/cover2.jpg"
 
 function PostGrid({data}) {
     return (
-        <div className=" bg-offWhite rounded-xl p-6 font-roboto  ">
+        <div className=" bg-offWhite rounded-xl p-6 font-roboto cursor-pointer ">
             {/* Avator Container */}
             <div className=" w-full flex  mb-3 ">
                 <div className="bg-blue-400 w-10 h-10 overflow-hidden  rounded-full mr-3 ">
