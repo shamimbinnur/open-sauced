@@ -8,10 +8,9 @@ function Modal() {
 
     return (
         <>
+        {/* Overlay */}
         <div onClick={()=> setIsOpen(false)  } className={" z-20 bg-gray-800 opacity-80 w-full h-full top-0 left-0 absolute  " + show} >
         </div>
-
-        
         <div className=" flex justify-center ">
             <div className=" absolute top-14 flex justify-center flex-col items-center sm:top-10">
                 

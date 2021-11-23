@@ -5,8 +5,6 @@ import { useGridContext } from '../contexts/gridContext';
 function LayoutToggle() {
 
     const { isGrid, setIsGrid } = useGridContext();
-
-    console.log(isGrid)
     const position = isGrid ? "left-0" : "right-0"
 
     
